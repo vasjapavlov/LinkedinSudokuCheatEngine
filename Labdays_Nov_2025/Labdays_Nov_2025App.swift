@@ -11,7 +11,11 @@ import SwiftUI
 struct Labdays_Nov_2025App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SudokuView(
+                viewModel: SudokuViewModel(
+                    solver: SudokuSolver()
+                )
+            )
         }
     }
 }
